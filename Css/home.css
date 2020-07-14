@@ -430,7 +430,7 @@ section:nth-of-type(even) {
 }
 
 #mySlider .carousel-item {
-  background: url(../../Images/Intersection.png);
+  background: url(../Images/Intersection.png);
   background-size: cover;
   background-position: top;
 }
