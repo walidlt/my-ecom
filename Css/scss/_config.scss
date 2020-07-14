@@ -1,0 +1,233 @@
+// Vars
+
+$firstColor: #15151D;
+$secondColor: #1D2029;
+$thirdColor: #D11E24;
+$fontFamily: "open sans";
+
+
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: $fontFamily;
+    background-color: rgb(242, 242, 242);
+    overflow-y: hidden !important;
+}
+
+.btn-danger{
+
+    border-color: $thirdColor;
+    background-color: $thirdColor;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+
+    &:hover{
+
+        background-color: #861519;
+        border-color: $thirdColor;
+    }
+}
+
+.btn-outline-danger{
+
+    border-color: $thirdColor;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+
+    &:hover{
+
+        background-color: $thirdColor;
+        border-color: $thirdColor;
+    }
+}
+
+section{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h2{
+
+        margin-bottom: 20px;
+    }
+}
+
+section:nth-of-type(even){
+    
+    background-color: #fafafa;
+}
+
+.btn-link{
+
+    color: $thirdColor;
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+    &:hover{
+
+        color: #800f12;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 992px) {
+    
+    .product-slider{
+
+        height: 550px !important;
+        overflow: hidden !important;
+
+        .card{
+
+            margin-bottom: 100px !important;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 762px) {
+    
+#mySlider {
+
+    .carousel-item{
+
+        
+        .carousel-caption{
+
+            position: absolute;
+            top: 50px !important;
+            left: 0px !important;
+            width: 80% !important;
+            display: block !important;
+            text-align: center !important;
+            
+            
+            
+
+            h5{
+                font-size: 2em !important;
+                margin-top: 100px !important;
+                color: #FFF !important;
+            }
+
+            p{
+                line-height: 1.5em !important;
+                color: #FFF !important;
+            }
+
+
+            .btn-outline-danger{
+
+                border-color: #FFF !important ;
+                color: #FFF !important;
+
+                &:hover{
+
+                    border-color: #D11E24 !important;
+                }
+            }
+        }
+        
+        
+    }
+
+    
+}
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    
+    .firstNav{
+
+        height: 50px !important;
+        text-align: center;
+    }
+
+    .navbar-nav .active .nav-link::before{
+        
+        display: none;
+
+    }
+
+    #product-slider{
+
+        .carousel-control-prev{
+    
+
+            top: 45% !important;
+            
+        }
+        .carousel-control-next{
+    
+    
+            top: 45% !important;
+            
+        }
+    }
+
+    
+#mySlider {
+
+    .carousel-item{
+
+        .carousel-caption{
+
+            position: absolute;
+            top: 0px !important;
+            left: 50px !important;
+
+            h5{
+                color: $thirdColor;
+                font-size: 3em;
+                font-weight: 500;
+            }
+
+            p{
+                color: $thirdColor;
+                letter-spacing: 1px;
+                line-height: 1.8em;
+            }
+        }
+        
+        
+    }
+
+    
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+    
+
+
+    #product-slider{
+
+        
+        .carousel-item{
+
+            height: 550px !important;
+        }
+
+}
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+
+}
+
